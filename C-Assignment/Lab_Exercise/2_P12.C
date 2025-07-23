@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+
+struct Student{
+	char sname[10];
+	int rno,marks;
+};
+
+void main()
+{
+	struct Student s[3];
+	int i;
+	clrscr();
+
+	printf("\n Enter Details of 3 students\n");
+	for(i=0;i<3;i++)
+	{
+	printf("\nEnter student %d  name:",i+1);
+	scanf("%s",&s[i].sname);
+	printf("\nEnter Student %d Roll_no:",i+1);
+	scanf("%d",&s[i].rno);
+	printf("\nEnter Student %d Marks:",i+1);
+	scanf("%d",&s[i].marks);
+	}
+
+	printf("\n Details of 3 students\n");
+	for(i=0;i<3;i++)
+	{
+		printf("\n Student Name is : %s\n",s[i].sname);
+		printf("\n Student Roll_NO is : %d\n",s[i].rno);
+		printf("\n Student Marks is : %d",s[i].marks);
+	}
+	getch();
+}
+
