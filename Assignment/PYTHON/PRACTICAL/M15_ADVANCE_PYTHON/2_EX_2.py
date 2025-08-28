@@ -1,0 +1,10 @@
+print("*"*40)
+s=input("Enter A String : ")
+i=int(input("Enter An Integer Number : "))
+f=float(input("Enter A Float Number : "))
+print("*"*40)
+
+print("String Is : ",s)
+print("An Integer Number Is : ",i)
+print("A Float Number Is : ",f)
+print("*"*40)
